@@ -6,6 +6,41 @@ html {
   background-color: #000;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .App {
   text-align: center;
+}
+
+.header-main-page {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20%;
+  gap: 1px 1px;
+  grid-template-areas: "left-side right-side";
+}
+
+.left-side {
+  grid-area: left-side;
+  text-align: left;
+}
+
+.right-side {
+  grid-area: right-side;
+  text-align: right;
+}
+
+#title {
+  font-size: 1.5rem;
+}
+
+#content {
+  text-align: center;
+}
+
+#japanese-text {
+  font-size: 2rem;
 }
